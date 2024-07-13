@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators JavaScript</title>
+</head>
+<body>
+    <script>
+        console.log( null || 2 || undefined );
+        /* the output is 2 because the 2 is the first true statement */
+        
+        console.log(1 && null && 2);
+        /* the output is null because the null is the first false statement */
+
+        let age = 100;
+        if(age <= 90 && age >= 14){
+            console.log("Inclusively")
+        }
+        else{
+            console.log("Exclusively")
+        }
+
+        if(!(age <= 90 && age >= 14)){
+            console.log("not between 14 and 90s")
+        }
+        else{
+            console.log("between 14 and 90s")
+        }
+
+        if(age < 14 || age > 90){
+            console.log("Age is not between 14 and 90s")
+        }
+        else{
+            console.log("Age is between 14 and 90s")
+        }
+    </script>
+</body>
+</html>
